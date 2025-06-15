@@ -55,6 +55,8 @@ pub struct UserTask {
     pub id: i32,
     pub user_id: i32,
     pub task_id: i32,
+    pub status_id: i32, // ✅ Add this field
+
 }
 
 #[derive(Insertable)]
@@ -63,6 +65,7 @@ pub struct UserTask {
 pub struct NewUserTask {
     pub user_id: i32,
     pub task_id: i32,
+    
 }
 
 #[derive(Queryable, Selectable, Debug)]
@@ -79,4 +82,3 @@ pub struct TaskStatus {
 pub struct NewTaskStatus<'a> {
     pub name: &'a str,
 }
-

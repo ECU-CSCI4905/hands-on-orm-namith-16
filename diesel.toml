@@ -6,4 +6,4 @@ file = "src/schema.rs"
 custom_type_derives = ["diesel::query_builder::QueryId", "Clone"]
 
 [migrations_directory]
-dir = "/Users/subynishal/Downloads/hands-on-orm-NoahBrownnn-main/migrations"
+dir = "/Users/subynishal/Downloads/hands-on-orm-namith-16-main/migrations"
